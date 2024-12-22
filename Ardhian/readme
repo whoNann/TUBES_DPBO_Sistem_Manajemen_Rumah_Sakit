@@ -1,1 +1,31 @@
+  1. Kelas Ruangan
+   - Deskripsi: 
+     Kelas ini digunakan untuk merepresentasikan informasi tentang ruangan di sebuah fasilitas, seperti rumah sakit. Setiap ruangan memiliki atribut unik seperti ID, nama, dan kapasitas tempat tidur.
+   - Fungsi:
+     - Menyimpan informasi ruangan (ID, nama, kapasitas).
+     - Menampilkan informasi lengkap ruangan.
+     - Memperbarui kapasitas tempat tidur yang tersedia.
 
+   2. Kelas ResepObat
+     - Deskripsi: 
+       Kelas ini berfungsi untuk mengelola resep obat yang mencakup informasi detail tentang obat, dosis, dan jumlah obat yang diberikan kepada pasien.
+     - Fungsi:
+       - Membuat resep obat dengan dosis dan jumlah tertentu.
+       - Menampilkan informasi resep obat secara detail.
+
+   3. Kelas RekamMedis
+     - Deskripsi: 
+       Kelas ini merepresentasikan data rekam medis pasien yang mencakup riwayat pemeriksaan dan resep obat.
+     - Fungsi:
+       - Menyimpan riwayat pemeriksaan dan resep obat.
+       - Menambahkan atau memperbarui informasi rekam medis pasien.
+       - Menampilkan riwayat pemeriksaan dan resep obat yang terkait.
+
+   4. Kelas Obat
+     - Deskripsi: 
+       Kelas ini digunakan untuk mengelola informasi terkait obat-obatan seperti nama obat, kode obat, harga, dan jumlah stok yang tersedia.
+     - Fungsi:
+       - Menyimpan informasi dasar tentang obat (nama, kode, harga, stok).
+       - Mengecek ketersediaan stok obat.
+       - Memperbarui stok obat, baik menambah maupun mengurangi jumlah stok.
+  

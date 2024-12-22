@@ -112,5 +112,85 @@ public class Main {
                         System.out.println();
                     }
                     break;
+                case 5: // Tambah Rekam Medis
+                    System.out.print("ID Rekam Medis: ");
+                    String idRekamMedis = scanner.nextLine();
+                    System.out.print("Riwayat Pemeriksaan: ");
+                    String riwayatPemeriksaan = scanner.nextLine();
+                    System.out.print("Resep Obat: ");
+                    String resepObat = scanner.nextLine();
+                    rekamMedisList.add(new RekamMedis(idRekamMedis, riwayatPemeriksaan, resepObat));
+                    break;
 
+                case 6: // Tampilkan Rekam Medis
+                    System.out.println("Daftar Rekam Medis:");
+                    for (RekamMedis rekamMedis : rekamMedisList) {
+                        rekamMedis.ambilRiwayatMedis();
+                        System.out.println();
+                    }
+                    break;
+
+                case 7: // Tambah Resep Obat
+                    System.out.print("ID Resep: ");
+                    String idResep = scanner.nextLine();
+                    System.out.print("Nama Obat: ");
+                    String namaObat = scanner.nextLine();
+                    System.out.print("Dosis: ");
+                    String dosis = scanner.nextLine();
+                    System.out.print("Jumlah Obat: ");
+                    int jumlahObat = scanner.nextInt();
+                    scanner.nextLine(); // membersihkan newline
+                    resepObatList.add(new ResepObat(idResep, namaObat, dosis, jumlahObat));
+                    break;
+
+                case 8: // Tampilkan Resep Obat
+                    System.out.println("Daftar Resep Obat:");
+                    for (ResepObat resepObatItem : resepObatList) {
+                        resepObatItem.tampilkanResep();
+                        System.out.println();
+                    }
+                    break;
+
+                case 9: // Tambah Obat
+                    System.out.print("Nama Obat: ");
+                    String namaObatBaru = scanner.nextLine();
+                    System.out.print("Kode Obat: ");
+                    String kodeObat = scanner.nextLine();
+                    System.out.print("Harga Obat: ");
+                    double hargaObat = scanner.nextDouble();
+                    System.out.print("Jumlah Stok: ");
+                    int jumlahStok = scanner.nextInt();
+                    scanner.nextLine(); // membersihkan newline
+                    obatList.add(new Obat(namaObatBaru, kodeObat, hargaObat, jumlahStok));
+                    break;
+
+                case 10: // Tampilkan Obat
+                    System.out.println("Daftar Obat:");
+                    for (Obat obat : obatList) {
+                        System.out.println("Nama Obat: " + obat.getNamaObat());
+                        System.out.println("Kode Obat: " + obat.getKodeObat());
+                        System.out.println("Harga Obat: " + obat.getHargaObat());
+                        System.out.println("Jumlah Stok: " + obat.getJumlahStok());
+                        System.out.println();
+                    }
+                    break;
+
+                case 11: // Tambah Ruangan
+                    System.out.print("ID Ruangan: ");
+                    String idRuangan = scanner.nextLine();
+                    System.out.print("Nama Ruangan: ");
+                    String namaRuangan = scanner.nextLine();
+                    System.out.print("Kapasitas Tempat Tidur: ");
+                    int kapasitasTempatTidur = scanner.nextInt();
+                    scanner.nextLine(); // membersihkan newline
+                    ruanganList.add(new Ruangan(idRuangan, namaRuangan, kapasitasTempatTidur));
+                    break;
+
+                case 12: // Tampilkan Ruangan
+                    System.out.println("Daftar Ruangan:");
+                    for (Ruangan ruangan : ruanganList) {
+                        ruangan.tampilkanInformasiRuangan();
+                        System.out.println();
+                    }
+                    break;
           

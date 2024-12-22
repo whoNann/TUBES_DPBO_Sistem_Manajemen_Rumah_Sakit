@@ -139,7 +139,7 @@ public class Main {
                     String dosis = scanner.nextLine();
                     System.out.print("Jumlah Obat: ");
                     int jumlahObat = scanner.nextInt();
-                    scanner.nextLine(); // membersihkan newline
+                    scanner.nextLine();
                     resepObatList.add(new ResepObat(idResep, namaObat, dosis, jumlahObat));
                     break;
 
@@ -160,7 +160,7 @@ public class Main {
                     double hargaObat = scanner.nextDouble();
                     System.out.print("Jumlah Stok: ");
                     int jumlahStok = scanner.nextInt();
-                    scanner.nextLine(); // membersihkan newline
+                    scanner.nextLine();
                     obatList.add(new Obat(namaObatBaru, kodeObat, hargaObat, jumlahStok));
                     break;
 
@@ -182,7 +182,7 @@ public class Main {
                     String namaRuangan = scanner.nextLine();
                     System.out.print("Kapasitas Tempat Tidur: ");
                     int kapasitasTempatTidur = scanner.nextInt();
-                    scanner.nextLine(); // membersihkan newline
+                    scanner.nextLine();
                     ruanganList.add(new Ruangan(idRuangan, namaRuangan, kapasitasTempatTidur));
                     break;
 

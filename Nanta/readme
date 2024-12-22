@@ -1,1 +1,12 @@
-
+1. Kelas Abstrak Orang
+   - Deskripsi: Kelas ini berfungsi sebagai kelas dasar untuk semua jenis orang di rumah sakit, seperti pasien, dokter, dan perawat. Kelas ini mendefinisikan atribut umum (ID, nama, alamat, nomor telepon) dan metode abstrak tampilkanInformasi(), yang harus diimplementasikan oleh kelas turunan.
+   - Fungsi: Menyediakan struktur dasar dan kontrak untuk kelas-kelas yang mewarisi dari Orang.
+2. Kelas Pasien
+   - Deskripsi: Kelas ini mewarisi dari kelas Orang dan merepresentasikan pasien di rumah sakit. Kelas ini memiliki atribut tambahan seperti umur, jenis kelamin, dan riwayat medis.
+   - Fungsi: Mengimplementasikan metode tampilkanInformasi() untuk menampilkan informasi spesifik tentang pasien, termasuk data pribadi dan riwayat medis.
+3. Kelas Dokter
+   - Deskripsi: Kelas ini juga mewarisi dari kelas Orang dan merepresentasikan dokter di rumah sakit. Kelas ini memiliki atribut seperti spesialisasi, jadwal praktek, dan gaji pokok.
+   - Fungsi: Mengimplementasikan metode tampilkanInformasi() untuk menampilkan informasi spesifik tentang dokter, serta memberikan detail mengenai spesialisasi dan jadwal praktek.
+4. Kelas Perawat
+   - Deskripsi: Kelas ini juga mewarisi dari kelas Orang dan merepresentasikan perawat di rumah sakit. Kelas ini memiliki atribut seperti ruang tugas dan jadwal jaga.
+   - Fungsi: Mengimplementasikan metode tampilkanInformasi() untuk menampilkan informasi spesifik tentang perawat, termasuk ruang tugas dan jadwal jaga.

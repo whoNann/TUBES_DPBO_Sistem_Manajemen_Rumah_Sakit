@@ -1,1 +1,17 @@
+1. kelas TempatTidur.java
+-Deskripsi: Kelas ini merepresentasikan data tempat tidur, termasuk ID tempat tidur, status (terisi/kosong), dan tipe tempat tidur.
+-Fungsi:
+- updateStatusTempatTidur(String status): Memperbarui status tempat tidur (misalnya menjadi "kosong" atau "terisi") dan mencetak informasi status baru.
+- cekStatusTempatTidur(): Menampilkan status terkini tempat tidur berdasarkan ID-nya.
 
+2. kelas Pembayaran.java
+-Deskripsi: Kelas ini digunakan untuk menangani data pembayaran, termasuk ID pembayaran, total biaya, dan metode pembayaran.
+-Fungsi:
+- hitungTotalBiaya(double biaya): Menambahkan biaya baru ke total biaya dan mencetak total biaya yang telah diperbarui.
+- prosesPembayaran(): Menyelesaikan proses pembayaran dan mencetak informasi pembayaran berdasarkan metode dan jumlah yang dibayarkan.
+
+3. kelas Tagihan.java
+-Deskripsi: Kelas ini mewakili data tagihan, meliputi ID tagihan, jumlah total tagihan, dan status pembayarannya.
+-Fungsi: 
+- generateTagihan(): Membuat tagihan baru dengan informasi ID dan jumlah total, serta mencetak detail tagihan.
+- tampilkanTagihan(): Menampilkan informasi lengkap tentang tagihan, termasuk ID tagihan, jumlah total, dan status pembayarannya.

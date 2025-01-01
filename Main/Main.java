@@ -193,4 +193,81 @@ public class Main {
                         System.out.println();
                     }
                     break;
-          
+
+                case 13: // Tambah Tempat Tidur
+                    System.out.print("ID Tempat Tidur: ");
+                    String idTempatTidur = scanner.nextLine();
+                    System.out.print("Status (terisi/kosong): ");
+                    String status = scanner.nextLine();
+                    System.out.print("Tipe Tempat Tidur: ");
+                    String tipeTempatTidur = scanner.nextLine();
+                    tempatTidurList.add(new TempatTidur(idTempatTidur, status, tipeTempatTidur));
+                    break;
+
+                case 14: // Tampilkan Tempat Tidur
+                    System.out.println("Daftar Tempat Tidur:");
+                    for (TempatTidur tempatTidur : tempatTidurList) {
+                        tempatTidur.cekStatusTempatTidur();
+                        System.out.println();
+                    }
+                    break;
+
+                 case 15: // Tambah Pembayaran
+                    System.out.print("ID Pembayaran: ");
+                    String idPembayaran = scanner.nextLine();
+                    System.out.print("Total Biaya: ");
+                    double totalBiaya = scanner.nextDouble();
+                    scanner.nextLine(); // membersihkan newline
+                    System.out.print("Metode Pembayaran: ");
+                    String metodePembayaran = scanner.nextLine();
+                    pembayaranList.add(new Pembayaran(idPembayaran, totalBiaya, metodePembayaran));
+                    break;
+
+                case 16: // Tampilkan Pembayaran
+                    System.out.println("Daftar Pembayaran:");
+                    for (Pembayaran pembayaran : pembayaranList) {
+                        System.out.println("ID Pembayaran: " + pembayaran.getIdPembayaran());
+                        System.out.println("Total Biaya: " + pembayaran.getTotalBiaya());
+                        System.out.println("Metode Pembayaran: " + pembayaran.getMetodePembayaran());
+                        System.out.println();
+                    }
+                    break;
+
+                case 17: // Tambah Tagihan
+                    System.out.print("ID Tagihan: ");
+                    String idTagihan = scanner.nextLine();
+                    System.out.print("Jumlah Total: ");
+                    double jumlahTotal = scanner.nextDouble();
+                    scanner.nextLine(); // membersihkan newline
+                    System.out.print("Status Pembayaran: ");
+                    String statusPembayaran = scanner.nextLine();
+                    tagihanList.add(new Tagihan(idTagihan, jumlahTotal, statusPembayaran));
+                    break;
+
+                case 18: // Tampilkan Tagihan
+                    System.out.println("Daftar Tagihan:");
+                    for (Tagihan tagihan : tagihanList) {
+                        tagihan.tampilkanTagihan();
+                        System.out.println();
+                    }
+                    break;
+
+                case 19: // Tambah Detail Tagihan
+                    System.out.print("ID Layanan: ");
+                    String idLayanan = scanner.nextLine();
+                    System.out.print("Nama Layanan: ");
+                    String namaLayanan = scanner.nextLine();
+                    System.out.print("Biaya Layanan: ");
+                    double biayaLayanan = scanner.nextDouble();
+                    scanner.nextLine(); // membersihkan newline
+                    detailTagihanList.add(new DetailTagihan(idLayanan, namaLayanan, biayaLayanan));
+                    break;
+
+                case 20: // Tampilkan Detail Tagihan
+                    System.out.println("Daftar Detail Tagihan:");
+                    for (DetailTagihan detailTagihan : detailTagihanList) {
+                        detailTagihan.tampilkanDetail();
+                        System.out.println();
+                    }
+                    break;
+

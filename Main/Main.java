@@ -270,4 +270,55 @@ public class Main {
                         System.out.println();
                     }
                     break;
+                    
+                case 25: // Tambah Laboratorium
+                    System.out.print("ID Laboratorium: ");
+                    String idLaboratorium = scanner.nextLine();
+                    System.out.print("Nama Laboratorium: ");
+                    String namaLaboratorium = scanner.nextLine();
+                    System.out.print("Fasilitas: ");
+                    String fasilitas = scanner.nextLine();
+                    laboratoriumList.add(new Laboratorium(idLaboratorium, namaLaboratorium, fasilitas));
+                    break;
+
+                case 26: // Tampilkan Laboratorium
+                    System.out.println("Daftar Laboratorium:");
+                    for (Laboratorium laboratorium : laboratoriumList) {
+                        System.out.println("ID Laboratorium: " + laboratorium.getIdLaboratorium());
+                        System.out.println("Nama Laboratorium: " + laboratorium.getNamaLaboratorium());
+                        System.out.println("Fasilitas: " + laboratorium.getFasilitas());
+                        System.out.println();
+                    }
+                    break;
+
+                case 27: // Tambah Hasil Lab
+                    System.out.print("ID Hasil Lab: ");
+                    String idHasilLab = scanner.nextLine();
+                    System.out.print("Jenis Pemeriksaan: ");
+                    String jenisPemeriksaan = scanner.nextLine();
+                    System.out.print("Hasil: ");
+                    String hasil = scanner.nextLine();
+                    hasilLabList.add(new HasilLab(idHasilLab, jenisPemeriksaan, hasil));
+                    break;
+
+                case 28: // Tampilkan Hasil Lab
+                    System.out.println("Daftar Hasil Lab:");
+                    for (HasilLab hasilLab : hasilLabList) {
+                        hasilLab.tampilkanHasil();
+                        System.out.println();
+                    }
+                    break;
+
+                case 29: // Keluar
+                    System.out.println("Keluar dari program.");
+                    scanner.close();
+                    return;
+
+                default:
+                    System.out.println("Pilihan tidak valid. Silakan coba lagi.");
+            }
+        }
+    }
+}
+
 

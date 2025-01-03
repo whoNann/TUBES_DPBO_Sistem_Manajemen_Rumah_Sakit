@@ -1,1 +1,42 @@
+1. Kelas DetailTagihan 
 
+- Deskripsi:  
+  Kelas ini digunakan untuk merepresentasikan detail tagihan suatu layanan. Setiap objek dari kelas ini menyimpan informasi unik tentang layanan seperti ID layanan, nama layanan, dan biaya layanan.  
+
+- Fungsi:  
+  - Menyimpan informasi layanan:  
+    Mengelola informasi dasar tentang layanan seperti ID layanan, nama layanan, dan biaya layanan. Informasi ini diinisialisasi melalui konstruktor.  
+  - Menampilkan informasi layanan secara detail:  
+    Menyediakan metode untuk menampilkan ID layanan, nama layanan, dan biaya layanan dalam format tertentu.  
+  - Memperbarui informasi layanan:  
+    Memungkinkan pembaruan pada nama layanan dan biaya layanan melalui metode `tambahLayanan`.  
+  - Mengambil nilai biaya layanan:  
+    Menyediakan akses untuk mendapatkan nilai biaya layanan yang tersimpan melalui metode `getBiayaLayanan`.  
+
+2. Kelas JadwalDokter 
+
+- Deskripsi:  
+  Kelas ini digunakan untuk merepresentasikan jadwal kerja seorang dokter. Informasi yang dikelola mencakup ID jadwal, ID dokter, hari kerja, jam mulai, dan jam selesai. Kelas ini juga memiliki kemampuan untuk mengelola slot konsultasi dokter.  
+
+- Fungsi:  
+  - Menyimpan informasi jadwal dokter:  
+    Menyimpan informasi dasar seperti ID jadwal, ID dokter, hari kerja, jam mulai, dan jam selesai. Informasi ini diinisialisasi melalui konstruktor.  
+  - Menampilkan jadwal dokter secara detail:  
+    Menyediakan metode untuk menampilkan jadwal kerja dokter, termasuk ID dokter, hari kerja, dan jam operasional dalam format tertentu.  
+  - Memperbarui jadwal dokter:  
+    Memungkinkan pembaruan pada informasi hari kerja, jam mulai, dan jam selesai melalui metode `updateJadwal`.  
+  - Mengelola slot konsultasi(dalam bentuk daftar SlotKonsultasi):  
+    Kelas ini memiliki atribut untuk menyimpan daftar slot konsultasi, meskipun metode pengelolaan slot belum diimplementasikan dalam kode saat ini.  
+
+3. Kelas SlotKonsultasi 
+
+- Deskripsi:  
+  Kelas ini digunakan untuk merepresentasikan slot konsultasi dalam jadwal dokter. Setiap slot memiliki ID unik, terhubung ke jadwal dokter tertentu, dan memiliki informasi tentang waktu slot serta status ketersediaannya.  
+
+- Fungsi:  
+  - Menyimpan informasi slot konsultasi:  
+    Mengelola informasi dasar seperti ID slot, ID jadwal terkait, waktu slot, dan status apakah slot telah terisi atau masih tersedia.  
+  - Mengambil slot konsultasi:  
+    Memungkinkan pengambilan slot konsultasi jika slot masih tersedia. Jika berhasil, status ketersediaan slot akan diubah menjadi terisi (`statusTerisi = true`).  
+  - Memperbarui status slot konsultasi:  
+    Memberikan metode untuk memperbarui status ketersediaan slot secara manual melalui metode updateSlot, dengan parameter status baru.  
